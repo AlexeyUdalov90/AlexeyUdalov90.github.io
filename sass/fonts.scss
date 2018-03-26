@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Podkova";
+  src: url("../font/Podkovaregular.woff2") format("woff2"),
+    url("../font/Podkovaregular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Podkova";
+  src: url("../font/Podkovabold.woff2") format("woff2"),
+    url("../font/Podkovabold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
