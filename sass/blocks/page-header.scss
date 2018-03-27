@@ -1,0 +1,78 @@
+.page-header {
+  padding: 20px 0;
+
+  color: #ffffff;
+}
+
+.page-header__photo {
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  width: 200px;
+  height: 200px;
+
+  overflow: hidden;
+
+  background-color: rgba(#ffffff, 0.5);
+  background-image: url("../img/user-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px #ffffff,
+    0 7px 10px rgba(#000000, 0.6);
+}
+
+.page-header__person {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(#000000, 0.5);
+}
+
+.page-header__name {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.page-header__profession {
+  margin-bottom: 10px;
+}
+
+.page-header__location::before {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+
+  background-image: url("../img/location-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  opacity: 0.7;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  .page-header__photo {
+    margin: 0;
+    margin-right: 70px;
+  }
+
+  .page-header__name {
+    font-size: 42px;
+  }
+
+  .page-header__profession {
+    font-size: 24px;
+  }
+}

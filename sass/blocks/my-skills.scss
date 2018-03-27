@@ -1,0 +1,34 @@
+.my-skills {
+  padding: 10px 15px 15px;
+  margin-bottom: 20px;
+
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 5px 8px rgba(#000000, 0.6);
+}
+
+.my-skills__title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+}
+
+.my-skills__text {
+  margin: 0;
+}
+
+.my-skills__list {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .my-skills {
+    padding: 15px 20px 20px;
+  }
+
+  .my-skills__text {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+}
