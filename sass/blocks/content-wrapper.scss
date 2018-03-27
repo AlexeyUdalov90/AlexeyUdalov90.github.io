@@ -1,0 +1,14 @@
+.content-wrapper {
+  padding: 0 10px;
+  min-width: 300px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 738px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1170px;
+  }
+}

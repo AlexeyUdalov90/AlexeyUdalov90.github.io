@@ -1,0 +1,109 @@
+.my-works {
+  margin-bottom: 20px;
+  padding: 10px 15px 15px;
+
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 5px 8px rgba(#000000, 0.6);
+}
+
+.my-works__title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+}
+
+.my-works__list {
+  @include reset-list;
+}
+
+.my-works__item {
+  width: 270px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.my-works__link {
+  @include reset-link;
+}
+
+.my-works__image {
+  width: 100%;
+  height: 350px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.my-works__description {
+  padding: 5px;
+
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 3px 6px rgba(#000000, 0.5);
+
+  background-color: $page-background;
+  box-shadow: inset 0 3px 7px rgba(#000000, 0.5);
+  border-radius: 5px;
+}
+
+.my-works__name {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.my-works__text {
+  margin: 0;
+  margin-top: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .my-works__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .my-works__item {
+    width: 350px;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 8px;
+    }
+  }
+
+  .my-works__image {
+    height: 450px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .my-works {
+    padding: 15px 20px 0;
+  }
+
+  .my-works__item {
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    width: 360px;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 20px;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  .my-works__image {
+    height: 500px;
+  }
+
+  .my-works__description {
+    padding: 10px;
+  }
+}
