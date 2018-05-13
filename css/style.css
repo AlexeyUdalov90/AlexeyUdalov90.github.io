@@ -261,6 +261,7 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
   .my-works__item {
+    margin: 0;
     width: 350px; }
     .my-works__item:not(:nth-child(2n)) {
       margin-right: 8px; }
