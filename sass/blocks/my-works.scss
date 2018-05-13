@@ -67,6 +67,7 @@
   }
 
   .my-works__item {
+    margin: 0;
     width: 350px;
 
     &:not(:nth-child(2n)) {
